@@ -30,3 +30,8 @@ print(estoque[estoque > 20])
 # OPERAÇÃO ARITMÉTICA: AUMENTAR ESTOQUE EM 5 UNIDADES
 print('\nAumentando o estoque em 5 unidades para todos os produtos:')
 print(estoque + 5)
+
+# INCLUINDO UM VALOR NULO PARA SIMULAR A FALTA DE DADOS
+estoque.loc['Headphone'] = None
+print('\nEstoque com valor nulo (Headphone):')
+print(estoque)
