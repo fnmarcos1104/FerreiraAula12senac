@@ -35,3 +35,11 @@ print(estoque + 5)
 estoque.loc['Headphone'] = None
 print('\nEstoque com valor nulo (Headphone):')
 print(estoque)
+
+# OPERAÇÕES ARITMÉTICAS ENTRE SÉRIES
+# CRIANDO OUTRA SÉRIE COM PREÇO DOS PRODUTOS
+precos = pd.Series([3500, 2500, 1200, 900, 1500], index=produtos)
+
+# CALCULANDO VALOR TOTAL DO ESTOQUE
+print('\n Valor total do estoque por produto (preço * quantidade):')
+print(precos * estoque)
